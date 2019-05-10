@@ -1,0 +1,23 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "HIS API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kthos/ktapi.git"
+  },
+  "author": "Nontawat Srimala",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kthos/ktapi/issues"
+  },
+  "homepage": "https://github.com/kthos/ktapi#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
