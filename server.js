@@ -1,6 +1,8 @@
 const express = require('express') //เรียก Express
-const mysql = require('mysql') //เรียก Mysql
 const app = express() // เอาfunction ใส่ตัวแปร
+const PORT = process.env.PORT || 4000//กำหนดพอร์ท
+const mysql = require('mysql') //เรียก Mysql
+
 const config = require('./config.json') //เรียกไฟล์config.jsonใส่ตัวแปรconfig
 
 const fs = require('fs') //เรียกใช้Object File-system
@@ -9,8 +11,6 @@ require.extensions['.txt']=(module,filename)=>{ //กำหนดRequire Extensi
 }
 let ovstsql =require('./ovstScript.txt') //เรียกไฟล์ใส่ตัวแปร
 //console.log(ovstsql);//แสดงผลในConsole
-
-const PORT = process.env.PORT || 4000//กำหนดพอร์ท
 
 //เชื่อมต่อฐานข้อมูล
 const db=mysql.createConnection(config)
