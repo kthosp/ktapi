@@ -19,6 +19,8 @@
   "homepage": "https://github.com/kthos/ktapi#readme",
   "dependencies": {
     "express": "^4.16.4",
-    "mysql": "^2.17.1"
+    "file-system": "^2.2.2",
+    "mysql": "^2.17.1",
+    "vue-cli": "^2.9.6"
   }
 }
