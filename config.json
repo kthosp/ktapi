@@ -1,5 +1,5 @@
-{ "host" : "localhost", 
-"user":"root",
-"password" : "",
-"database": "expressmysql"
+{ "host":"192.168.0.253", 
+"user":"sa",
+"password":"extsapassword",
+"database":"hos"
 }
