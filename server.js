@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 4000//กำหนดพอร์ท
 //เชื่อมต่อฐานข้อมูล
 const db=mysql.createConnection(config)
 // console.log(db);
-db.connect()
+db.connect() //เชื่อมต่อฐานข้อมูล
 app.get('/ovst',(req,res)=>{ // สร้างRouterไว้เรียกจากBrowser
   let sql = 'SELECT TABLE_NAME,UPDATE_TIME,TABLE_ROWS '+ //คำสั่งSQL
   'FROM information_schema.tables '+
