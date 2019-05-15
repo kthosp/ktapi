@@ -5,19 +5,19 @@ const PORT = process.env.PORT || 4000
 
 app.get('/', (req, res) => {
   res.json({
-    message: 'API OK'
+    message: 'API OK !!!!'
   })
 })
 
 app.get('/status', (req, res) => {
   res.json({
-    message: 'API status router'
+    message: 'API <status> router'
   })
 })
 
 app.get('/error', (req, res) => {
   res.json({
-    message: 'API Error'
+    message: 'API <Error>'
   })
 })
 
