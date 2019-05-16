@@ -22,11 +22,13 @@ app.get('/ovst',(req,res)=>{ // สร้างRouterไว้เรียกจ
   // 'WHERE TABLE_SCHEMA = "hos" '+
   // 'AND TABLE_NAME = "ovst" '
   let sql = ovstsql //คำสั่ง sql ที่อ่านจากไฟล์txt
-   console.log(sql);
+  //console.log(sql);
   let query = db.query(sql,(err,results)=>{ //สั่ง Query
     if(err) throw err //ดักError
-    console.log(results) // แสดงผลบนConsole
-    res.json(results)   // แสดงผลบน Browser 
+    let ovstRow = results[0].TABLE_ROWS
+    console.log(ovstRow) // แสดงผลบนConsole
+    //res.json(results)
+    res.json(results[0].TABLE_ROWS)   // แสดงผลบน Browser 
   })
   
 })
