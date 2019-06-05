@@ -16,6 +16,7 @@ let ovstsql =require('./ovstScript.txt') //เรียกไฟล์ใส่�
 const db=mysql.createConnection(config)
 // console.log(db);
 db.connect() //เชื่อมต่อฐานข้อมูล
+
 app.get('/ovst',(req,res)=>{ // สร้างRouterไว้เรียกจากBrowser
   // let sql = 'SELECT TABLE_NAME,UPDATE_TIME,TABLE_ROWS '+ //คำสั่งSQL
   // 'FROM information_schema.tables '+
@@ -23,15 +24,16 @@ app.get('/ovst',(req,res)=>{ // สร้างRouterไว้เรียกจ
   // 'AND TABLE_NAME = "ovst" '
   let sql = ovstsql //คำสั่ง sql ที่อ่านจากไฟล์txt
   //console.log(sql);
+
+
   let query = db.query(sql,(err,results)=>{ //สั่ง Query
     if(err) throw err //ดักError
-    let ovstRow =results[0].TABLE_ROWS
-    let ovstName =results[0].TABLE_NAME
+    let ovstRow = results[0].TABLE_ROWS
+    let ovstName = results[0].TABLE_NAME
     console.log(ovstName+" "+ovstRow) // แสดงผลบนConsole       
     //res.json(results)
     res.json(ovstName+" "+results[0].TABLE_ROWS)   // แสดงผลบน Browser 
-  })
-  
+  })  
 })
 
 //ทดลองสร้างRouter
