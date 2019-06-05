@@ -6,7 +6,7 @@
         vue_view
       </h1>
       <h2 class="subtitle">
-        Nuxt.js project
+       Hello Nuxt.js project
       </h2>
       <div class="links">
         <a
