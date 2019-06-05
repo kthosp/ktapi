@@ -29,7 +29,7 @@ app.get('/ovst',(req,res)=>{ // สร้างRouterไว้เรียกจ
     let ovstName =results[0].TABLE_NAME
     console.log(ovstName+" "+ovstRow) // แสดงผลบนConsole       
     //res.json(results)
-    res.json(results[0].TABLE_ROWS)   // แสดงผลบน Browser 
+    res.json(ovstName+" "+results[0].TABLE_ROWS)   // แสดงผลบน Browser 
   })
   
 })
