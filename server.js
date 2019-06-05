@@ -25,8 +25,9 @@ app.get('/ovst',(req,res)=>{ // สร้างRouterไว้เรียกจ
   //console.log(sql);
   let query = db.query(sql,(err,results)=>{ //สั่ง Query
     if(err) throw err //ดักError
-    let ovstRow = results[0].TABLE_ROWS
-    console.log(ovstRow) // แสดงผลบนConsole
+    let ovstRow =results[0].TABLE_ROWS
+    let ovstName =results[0].TABLE_NAME
+    console.log(ovstName+" "+ovstRow) // แสดงผลบนConsole       
     //res.json(results)
     res.json(results[0].TABLE_ROWS)   // แสดงผลบน Browser 
   })
