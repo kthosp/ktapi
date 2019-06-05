@@ -1,5 +1,5 @@
 // setInterval.js
-
+//
 // This function simulates us checking the length
 // of a McDonald's drive-through queue
 let getQueueLength = function() {  

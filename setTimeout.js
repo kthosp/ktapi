@@ -1,5 +1,5 @@
 // setTimeout.js
-
+//
 let cue = 'The actors are here!';
 
 // However, the cue is not announced until at least 5000ms have

@@ -11,7 +11,7 @@ require.extensions['.txt']=(module,filename)=>{ //กำหนดRequire Extensi
 }
 let ovstsql =require('./ovstScript.txt') //เรียกไฟล์ใส่ตัวแปร
 //console.log(ovstsql);//แสดงผลในConsole
-
+//
 //เชื่อมต่อฐานข้อมูล
 const db=mysql.createConnection(config)
 // console.log(db);
