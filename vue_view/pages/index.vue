@@ -3,10 +3,10 @@
     <div>
       <app-logo/>
       <h1 class="title">
-        vue_view
+       KLONGTHOM
       </h1>
       <h2 class="subtitle">
-       Hello Nuxt.js project
+       HOSPITAL
       </h2>
       <div class="links">
         <a
