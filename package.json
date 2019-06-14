@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/kthos/ktapi#readme",
   "dependencies": {
+    "es6": "0.0.7",
     "express": "^4.16.4",
     "file-system": "^2.2.2",
     "mysql": "^2.17.1",
